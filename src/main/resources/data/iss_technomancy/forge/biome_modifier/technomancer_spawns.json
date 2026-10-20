@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#iss_technomancy:has_spawn/technomancer",
+  "spawners": {
+    "type": "iss_technomancy:technomancer",
+    "weight": 3,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

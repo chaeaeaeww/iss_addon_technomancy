@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "iss_technomancy:block/clockwork_altar"
+    },
+    "facing=south": {
+      "model": "iss_technomancy:block/clockwork_altar"
+    },
+    "facing=east": {
+      "model": "iss_technomancy:block/clockwork_altar"
+    },
+    "facing=west": {
+      "model": "iss_technomancy:block/clockwork_altar"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "iss_technomancy:technomancy_rune"
+  },
+  "base": {
+    "tag": "irons_spellbooks:wizard_base_leggings"
+  },
+  "addition": {
+    "item": "irons_spellbooks:arcane_essence"
+  },
+  "result": {
+    "item": "iss_technomancy:clockwork_engineer_leggings",
+    "count": 1
+  }
+}

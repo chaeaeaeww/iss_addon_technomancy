@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ERE",
+    "AMA",
+    "ECE"
+  ],
+  "key": {
+    "E": {
+      "item": "irons_spellbooks:energized_core"
+    },
+    "R": {
+      "item": "iss_technomancy:technomancy_rune"
+    },
+    "A": {
+      "item": "irons_spellbooks:arcane_ingot"
+    },
+    "M": {
+      "item": "iss_technomancy:module_capacitor_2"
+    },
+    "C": {
+      "item": "iss_technomancy:tech_dragon_core"
+    }
+  },
+  "result": {
+    "item": "iss_technomancy:module_capacitor_3",
+    "count": 1
+  }
+}

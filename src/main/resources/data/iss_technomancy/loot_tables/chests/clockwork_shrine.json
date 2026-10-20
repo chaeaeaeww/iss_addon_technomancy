@@ -1,0 +1,183 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.35
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:overcharged_dynamo_core"
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:module_splitter_1"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:module_caliber_1"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:module_assembler_1"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:module_capacitor_1"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:module_tesla_1"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.25
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:module_splitter_2"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:module_caliber_2"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:module_assembler_2"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:module_capacitor_2"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:module_tesla_2"
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 2,
+        "max": 4
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:arcane_cog",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 6
+              }
+            }
+          ],
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:technomancy_rune",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "irons_spellbooks:lightning_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "irons_spellbooks:energized_core",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "irons_spellbooks:arcane_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 12
+              }
+            }
+          ],
+          "weight": 6
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "irons_spellbooks:scroll",
+          "functions": [
+            {
+              "function": "irons_spellbooks:randomize_spell",
+              "quality": {
+                "min": 0.2,
+                "max": 0.9
+              },
+              "spell_filter": {
+                "school": "iss_technomancy:technomancy"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

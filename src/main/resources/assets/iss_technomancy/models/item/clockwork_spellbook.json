@@ -1,0 +1,26 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "irons_spellbooks:item/template_spell_book_model",
+    "textures": {
+      "book": "iss_technomancy:item/spell_book_models/clockwork_spellbook",
+      "particle": "iss_technomancy:item/spell_book_models/clockwork_spellbook"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "iss_technomancy:item/clockwork_spellbook"
+      }
+    },
+    "head": {
+      "parent": "irons_spellbooks:item/template_spell_book_model_open",
+      "textures": {
+        "book": "iss_technomancy:item/spell_book_models/clockwork_spellbook",
+        "particle": "iss_technomancy:item/spell_book_models/clockwork_spellbook"
+      }
+    }
+  }
+}

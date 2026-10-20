@@ -1,0 +1,148 @@
+plugins {
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+    id 'org.parchmentmc.librarian.forgegradle' version '1.+'
+    id 'idea'
+}
+
+version = mod_version
+group = mod_group_id
+
+base {
+    archivesName = "${mod_id}-${minecraft_version}"
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+// dev-only source set (devtest/): GameTests and the GeckoLib animation validator; never packaged in the mod jar
+sourceSets {
+    devtest {
+        java { srcDir 'devtest'; exclude 'resources/**' }
+        resources { srcDir 'devtest/resources' }
+        compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath + fileTree(layout.buildDirectory.dir('devlibs'))
+        runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath + fileTree(layout.buildDirectory.dir('devlibs'))
+    }
+}
+
+minecraft {
+    mappings channel: mapping_channel, version: mapping_version
+    copyIdeResources = true
+
+    runs {
+        configureEach {
+            workingDirectory project.file('run')
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            // Iron's Spells ships mixins with an SRG refmap; remap it for the dev environment.
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+            mods {
+                "${mod_id}" {
+                    source sourceSets.main
+                }
+            }
+        }
+        client {}
+        server {
+            args '--nogui'
+        }
+        // ./gradlew runGameTestServer: runs the dev-only GameTests in devtest/
+        gameTestServer {
+            property 'forge.enabledGameTestNamespaces', mod_id
+            mods {
+                "${mod_id}" {
+                    source sourceSets.main
+                    source sourceSets.devtest
+                }
+            }
+        }
+    }
+}
+
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+repositories {
+    // Iron's Spells 'n Spellbooks 1.20.1 is not published to a public maven, so the release jar is read from ./libs
+    flatDir { dirs 'libs' }
+    maven { url = 'https://code.redspace.io/releases' }
+    maven { url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
+    maven { url = 'https://maven.theillusivec4.top' }
+    maven { url = 'https://maven.kosmx.dev/' }
+}
+
+dependencies {
+    minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+
+    implementation fg.deobf("blank:irons_spellbooks:${irons_spellbooks_version}")
+    implementation fg.deobf("io.redspace:irons_lib:${irons_lib_version}")
+    implementation fg.deobf("software.bernie.geckolib:geckolib-forge-${geckolib_version}")
+    implementation fg.deobf("dev.kosmx.player-anim:player-animation-lib-forge:${player_animator_version}")
+    implementation fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}")
+}
+
+tasks.named('processResources', ProcessResources).configure {
+    var replaceProperties = [
+            minecraft_version              : minecraft_version,
+            minecraft_version_range        : minecraft_version_range,
+            forge_version_range            : forge_version_range,
+            loader_version_range           : loader_version_range,
+            irons_spellbooks_version_range : irons_spellbooks_version_range,
+            mod_id                         : mod_id,
+            mod_name                       : mod_name,
+            mod_license                    : mod_license,
+            mod_version                    : mod_version,
+            mod_authors                    : mod_authors,
+            mod_description                : mod_description
+    ]
+    inputs.properties replaceProperties
+    filesMatching(['META-INF/mods.toml', 'pack.mcmeta']) {
+        expand replaceProperties + [project: project]
+    }
+}
+
+tasks.named('jar', Jar).configure {
+    manifest {
+        attributes([
+                'Specification-Title'     : mod_id,
+                'Specification-Vendor'    : mod_authors,
+                'Specification-Version'   : '1',
+                'Implementation-Title'    : project.name,
+                'Implementation-Version'  : project.jar.archiveVersion,
+                'Implementation-Vendor'   : mod_authors
+        ])
+    }
+    finalizedBy 'reobfJar'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+// ---- dev-only check: parses every GeckoLib animation/geo file with GeckoLib itself (./gradlew validateAnimations)
+tasks.register('extractMclib', Copy) {
+    from({ zipTree(configurations.runtimeClasspath.find { it.name.contains('geckolib') }) }) {
+        include 'META-INF/jarjar/mclib-*.jar'
+        eachFile { path = name }
+    }
+    into layout.buildDirectory.dir('devlibs')
+    includeEmptyDirs = false
+}
+tasks.named('compileDevtestJava') { dependsOn 'extractMclib' }
+tasks.register('validateAnimations', JavaExec) {
+    dependsOn 'devtestClasses'
+    classpath = sourceSets.devtest.runtimeClasspath
+    mainClass = 'net.isstechnomancy.devtest.ValidateAnimations'
+    args = [file('src/main/resources/assets/iss_technomancy').absolutePath]
+}
+// ---- dev-only check: procedural bone offsets never accumulate (./gradlew checkProceduralPose)
+tasks.register('checkProceduralPose', JavaExec) {
+    dependsOn 'devtestClasses'
+    classpath = sourceSets.devtest.runtimeClasspath
+    mainClass = 'net.isstechnomancy.devtest.ProceduralPoseCheck'
+}
+// ---- dev-only: GeckoLib-exact posed quads for comparing with the Python preview (./gradlew geckoDump -Pdump="geo anim out [anim time]...")
+tasks.register('geckoDump', JavaExec) {
+    dependsOn 'devtestClasses'
+    classpath = sourceSets.devtest.runtimeClasspath
+    mainClass = 'net.isstechnomancy.devtest.GeckoDump'
+    args = (project.findProperty('dump') ?: '').toString().tokenize('|')
+}

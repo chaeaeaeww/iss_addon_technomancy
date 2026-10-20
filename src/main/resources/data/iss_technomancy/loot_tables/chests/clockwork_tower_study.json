@@ -1,0 +1,169 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.5
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:overcharged_dynamo_core"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:module_splitter_2"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:module_caliber_2"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:module_assembler_2"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:module_capacitor_2"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:module_tesla_2"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.15
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:module_splitter_3"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:module_caliber_3"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:module_assembler_3"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:module_capacitor_3"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:module_tesla_3"
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 2,
+        "max": 4
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:arcane_cog",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 6
+              }
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:technomancy_rune",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "irons_spellbooks:lightning_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "irons_spellbooks:energized_core",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "irons_spellbooks:arcane_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "irons_spellbooks:scroll",
+          "functions": [
+            {
+              "function": "irons_spellbooks:randomize_spell",
+              "quality": {
+                "min": 0.3,
+                "max": 1.0
+              },
+              "spell_filter": {
+                "school": "iss_technomancy:technomancy"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

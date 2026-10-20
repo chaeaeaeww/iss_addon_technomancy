@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "RRR",
+    "ROR",
+    "RRR"
+  ],
+  "key": {
+    "O": {
+      "item": "irons_spellbooks:upgrade_orb"
+    },
+    "R": {
+      "item": "iss_technomancy:technomancy_rune"
+    }
+  },
+  "result": {
+    "item": "iss_technomancy:technomancy_upgrade_orb",
+    "count": 1
+  }
+}

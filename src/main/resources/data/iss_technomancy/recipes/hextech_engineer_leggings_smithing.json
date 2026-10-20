@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "iss_technomancy:hextech_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "iss_technomancy:clockwork_engineer_leggings"
+  },
+  "addition": {
+    "item": "iss_technomancy:tech_dragon_core"
+  },
+  "result": {
+    "item": "iss_technomancy:hextech_engineer_leggings"
+  }
+}

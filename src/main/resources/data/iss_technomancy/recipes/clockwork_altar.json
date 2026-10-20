@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CRC",
+    "ALA",
+    "PPP"
+  ],
+  "key": {
+    "C": {
+      "item": "iss_technomancy:arcane_cog"
+    },
+    "R": {
+      "item": "iss_technomancy:technomancy_rune"
+    },
+    "A": {
+      "item": "irons_spellbooks:arcane_ingot"
+    },
+    "L": {
+      "item": "minecraft:lightning_rod"
+    },
+    "P": {
+      "item": "minecraft:polished_blackstone"
+    }
+  },
+  "result": {
+    "item": "iss_technomancy:clockwork_altar",
+    "count": 1
+  }
+}

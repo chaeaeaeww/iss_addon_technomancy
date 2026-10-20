@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "iss_technomancy:clockwork_shrine",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 42,
+    "separation": 16,
+    "salt": 918273645
+  }
+}

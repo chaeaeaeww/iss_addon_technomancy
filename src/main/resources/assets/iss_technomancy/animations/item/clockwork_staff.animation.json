@@ -1,0 +1,177 @@
+{
+  "format_version": "1.8.0",
+  "geckolib_format_version": 2,
+  "animations": {
+    "idle": {
+      "loop": true,
+      "animation_length": 8.0,
+      "bones": {
+        "ring_h": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                0,
+                0,
+                0
+              ]
+            },
+            "8.0": {
+              "vector": [
+                0,
+                360,
+                0
+              ]
+            }
+          }
+        },
+        "ring_v": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                0,
+                0,
+                0
+              ]
+            },
+            "4": {
+              "vector": [
+                0,
+                0,
+                -720
+              ]
+            }
+          }
+        },
+        "planet_a": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                0,
+                0,
+                0
+              ]
+            },
+            "1": {
+              "vector": [
+                0,
+                0,
+                2880
+              ]
+            }
+          }
+        },
+        "planet_b": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                0,
+                0,
+                0
+              ]
+            },
+            "1": {
+              "vector": [
+                0,
+                0,
+                -2880
+              ]
+            }
+          }
+        },
+        "pommel": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                0,
+                0,
+                0
+              ]
+            },
+            "2": {
+              "vector": [
+                0,
+                0,
+                1440
+              ]
+            }
+          }
+        },
+        "orb": {
+          "scale": {
+            "0.0": {
+              "vector": [
+                1,
+                1,
+                1
+              ]
+            },
+            "1.0": {
+              "vector": [
+                1.1,
+                1.1,
+                1.1
+              ],
+              "easing": "easeInOutSine"
+            },
+            "2.0": {
+              "vector": [
+                1,
+                1,
+                1
+              ],
+              "easing": "easeInOutSine"
+            },
+            "3.0": {
+              "vector": [
+                1.1,
+                1.1,
+                1.1
+              ],
+              "easing": "easeInOutSine"
+            },
+            "4.0": {
+              "vector": [
+                1,
+                1,
+                1
+              ],
+              "easing": "easeInOutSine"
+            },
+            "5.0": {
+              "vector": [
+                1.1,
+                1.1,
+                1.1
+              ],
+              "easing": "easeInOutSine"
+            },
+            "6.0": {
+              "vector": [
+                1,
+                1,
+                1
+              ],
+              "easing": "easeInOutSine"
+            },
+            "7.0": {
+              "vector": [
+                1.1,
+                1.1,
+                1.1
+              ],
+              "easing": "easeInOutSine"
+            },
+            "8.0": {
+              "vector": [
+                1,
+                1,
+                1
+              ],
+              "easing": "easeInOutSine"
+            }
+          }
+        }
+      }
+    }
+  }
+}

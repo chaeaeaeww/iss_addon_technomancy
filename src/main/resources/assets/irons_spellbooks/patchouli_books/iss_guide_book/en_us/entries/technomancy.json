@@ -1,0 +1,61 @@
+{
+  "name": "Technomancy",
+  "icon": "iss_technomancy:arcane_cog",
+  "category": "irons_spellbooks:root",
+  "sortnum": 21,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "iss_technomancy:arcane_cog",
+      "title": "Technomancy",
+      "text": "The Technomancy school, with an Arcane Cog as its Focus, is centered around $(l)deployed constructs$() and maintaining them. Craft Arcane Cogs from copper, gold and redstone; a Clock also works as a Focus."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Construct Synergy",
+      "text": "A $(item)Brass Sentry$() is a stationary turret that fires at nearby hostiles. Hit your own Sentry with $(item)Arc Welder$() to repair it, extend its lifetime and $(l)Overclock$() it, making it fire faster for a few seconds."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "iss_technomancy:technomancy_rune",
+      "title": "Technomancy Rune",
+      "text": "Surround a Blank Rune with eight Technomancy Focus items. Runes upgrade wizard armor into the $(item)Clockwork Engineer$() set and become $(item)Technomancy Upgrade Orbs$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "iss_technomancy:clockwork_scepter",
+      "title": "Clockwork Dynamo Staff",
+      "text": "A spinning cog-ring staff that empowers Technomancy and shortens cooldowns. It holds three staff modules."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Overdrive Protocol",
+      "text": "Overdrive upgrades the $(l)next$() Technomancy spell you cast: Gear Barrage fires 5 piercing gears, Arc Welder forks to 2 extra foes, Steam Vent becomes superheated, Deploy Brass Sentry builds a twin-cannon $(item)Siege Sentry$() and Assemble Automaton builds a $(item)Mk.II$() war construct."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "iss_technomancy:clockwork_automaton_spawn_egg",
+      "title": "Clockwork Automaton",
+      "text": "Rogue automatons punch hard and vent volleys of gears. Destroy them for Arcane Cogs and copper, or assemble your own with Assemble Automaton. Overdriven, it becomes a round $(item)Mk.II$() steam golem with Rocket Grab, Power Fist and a Static Field."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "iss_technomancy:module_splitter_1",
+      "title": "Staff Modules",
+      "text": "$(l)Sneak + use$() the Clockwork Dynamo Staff to open its three sockets. Modules only upgrade Technomancy spells cast with the staff: $(item)Splitter$() (more projectiles), $(item)Caliber$() (bigger, stronger), $(item)Assembler$() (more constructs), $(item)Capacitor$() (cooldown, cast speed) and $(item)Tesla Coil$() (chain lightning). Tiers stack up to level 5 per family."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "iss_technomancy:clockwork_altar",
+      "title": "The Tech Dragon",
+      "text": "Clockwork Shrines hide an altar; you can also craft one. Use an $(item)Overcharged Dynamo Core$() on it to wake the $(l)Tech Dragon$(): gear volleys, lightning breath, thunder storms, dive bombs and drone swarms, and a deadlier overcharged second phase."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "iss_technomancy:clockwork_codex",
+      "title": "Clockwork Codex",
+      "text": "A 12-slot spellbook bound with Tech Dragon Cores: +15% Technomancy power, +5% spell power and +200 mana."
+    }
+  ]
+}

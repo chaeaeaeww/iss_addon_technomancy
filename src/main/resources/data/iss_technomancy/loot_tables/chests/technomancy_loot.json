@@ -1,0 +1,65 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.35
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "irons_spellbooks:scroll",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "irons_spellbooks:randomize_spell",
+              "quality": {
+                "min": 0.0,
+                "max": 0.8
+              },
+              "spell_filter": {
+                "school": "iss_technomancy:technomancy"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "irons_spellbooks:affinity_ring",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "irons_spellbooks:randomize_ring_enhancement",
+              "spell_filter": {
+                "school": "iss_technomancy:technomancy"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:arcane_cog",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iss_technomancy:technomancy_rune",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

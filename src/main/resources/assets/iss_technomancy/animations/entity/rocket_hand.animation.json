@@ -1,0 +1,124 @@
+{
+  "format_version": "1.8.0",
+  "geckolib_format_version": 2,
+  "animations": {
+    "open": {
+      "loop": true,
+      "animation_length": 1.0,
+      "bones": {
+        "finger1": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                -35,
+                0,
+                -8
+              ]
+            }
+          }
+        },
+        "finger2": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                -35,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "finger3": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                -35,
+                0,
+                8
+              ]
+            }
+          }
+        },
+        "thumb": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                0,
+                -35,
+                0
+              ]
+            }
+          }
+        },
+        "hand": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                0,
+                0,
+                0
+              ]
+            },
+            "1.0": {
+              "vector": [
+                0,
+                0,
+                360
+              ]
+            }
+          }
+        }
+      }
+    },
+    "closed": {
+      "loop": true,
+      "animation_length": 1.0,
+      "bones": {
+        "finger1": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                70,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "finger2": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                70,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "finger3": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                70,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "thumb": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                0,
+                50,
+                0
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

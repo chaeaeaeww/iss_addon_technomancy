@@ -1,0 +1,9 @@
+{
+  "amount": 0.05,
+  "attribute": "iss_technomancy:technomancy_spell_power",
+  "containerItem": {
+    "Count": 1,
+    "id": "iss_technomancy:technomancy_upgrade_orb"
+  },
+  "operation": "MULTIPLY_BASE"
+}

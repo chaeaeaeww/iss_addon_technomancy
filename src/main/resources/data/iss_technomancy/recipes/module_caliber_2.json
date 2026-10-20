@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GRG",
+    "DMD",
+    "GRG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "R": {
+      "item": "iss_technomancy:technomancy_rune"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "M": {
+      "item": "iss_technomancy:module_caliber_1"
+    }
+  },
+  "result": {
+    "item": "iss_technomancy:module_caliber_2",
+    "count": 1
+  }
+}

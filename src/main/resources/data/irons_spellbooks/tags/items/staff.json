@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "iss_technomancy:clockwork_scepter",
+    "iss_technomancy:hextech_scepter",
+    "iss_technomancy:hextech_scepter_star1",
+    "iss_technomancy:hextech_scepter_star2",
+    "iss_technomancy:hextech_scepter_star3"
+  ]
+}

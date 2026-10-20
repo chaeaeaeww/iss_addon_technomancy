@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " EC",
+    " IE",
+    "I  "
+  ],
+  "key": {
+    "E": {
+      "item": "irons_spellbooks:arcane_essence"
+    },
+    "C": {
+      "item": "iss_technomancy:technomancy_rune"
+    },
+    "I": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "iss_technomancy:clockwork_scepter",
+    "count": 1
+  }
+}

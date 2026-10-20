@@ -1,0 +1,352 @@
+{
+ "ground_idle": {
+  "length": 6.0,
+  "loop": true
+ },
+ "walk": {
+  "length": 1.6,
+  "loop": true
+ },
+ "rest": {
+  "length": 6.0,
+  "loop": true
+ },
+ "fly": {
+  "length": 2.0,
+  "loop": true
+ },
+ "bite": {
+  "hit": 0.45,
+  "length": 1.0,
+  "loop": false
+ },
+ "claw_left": {
+  "hit": 0.52,
+  "length": 1.15,
+  "loop": false
+ },
+ "claw_right": {
+  "hit": 0.52,
+  "length": 1.15,
+  "loop": false
+ },
+ "roar": {
+  "roar": 0.85,
+  "length": 2.8,
+  "loop": false
+ },
+ "sit": {
+  "length": 6.0,
+  "loop": true
+ },
+ "lie_down": {
+  "length": 2.0,
+  "loop": "hold"
+ },
+ "rest_up": {
+  "length": 1.6,
+  "loop": false
+ },
+ "sleep": {
+  "length": 8.0,
+  "loop": true
+ },
+ "wake": {
+  "length": 2.4,
+  "loop": false
+ },
+ "run": {
+  "length": 0.8,
+  "loop": true
+ },
+ "bite_sweep": {
+  "hit": 0.55,
+  "length": 1.15,
+  "loop": false
+ },
+ "grab": {
+  "catch": 0.5,
+  "length": 1.0,
+  "loop": "hold"
+ },
+ "grab_shake": {
+  "pulse": [
+   0.2,
+   0.6
+  ],
+  "length": 0.8,
+  "loop": true
+ },
+ "grab_toss": {
+  "release": 0.42,
+  "length": 1.0,
+  "loop": false
+ },
+ "tail_whip": {
+  "hit": 0.55,
+  "length": 1.1,
+  "loop": false
+ },
+ "tail_whip_right": {
+  "hit": 0.55,
+  "length": 1.1,
+  "loop": false
+ },
+ "tail_sweep": {
+  "hits": [
+   0.5,
+   1.0
+  ],
+  "length": 1.6,
+  "loop": false
+ },
+ "stomp": {
+  "roar": 0.55,
+  "impact": 1.0,
+  "length": 1.8,
+  "loop": false
+ },
+ "wing_gust": {
+  "roar": 0.35,
+  "gust": 1.05,
+  "length": 1.9,
+  "loop": false
+ },
+ "field_roar": {
+  "field": 0.7,
+  "length": 2.0,
+  "loop": false
+ },
+ "rend": {
+  "length": 0.7,
+  "loop": true
+ },
+ "breath_charge_ground": {
+  "length": 1.0,
+  "loop": "hold"
+ },
+ "breath_ground": {
+  "length": 1.0,
+  "loop": true
+ },
+ "phase_two": {
+  "roar": 1.0,
+  "burst": 2.6,
+  "length": 3.4,
+  "loop": false
+ },
+ "pylon_charge": {
+  "length": 3.0,
+  "loop": true
+ },
+ "stunned": {
+  "length": 2.0,
+  "loop": true
+ },
+ "death": {
+  "roar": 1.0,
+  "collapse": 2.0,
+  "curled": 4.2,
+  "length": 5.0,
+  "loop": "hold"
+ },
+ "hover": {
+  "length": 1.9,
+  "loop": true
+ },
+ "fly_fast": {
+  "length": 1.25,
+  "loop": true
+ },
+ "glide": {
+  "length": 4.0,
+  "loop": true
+ },
+ "dive": {
+  "length": 1.0,
+  "loop": true
+ },
+ "takeoff": {
+  "leap": 0.45,
+  "length": 1.4,
+  "loop": false
+ },
+ "land": {
+  "touchdown": 0.9,
+  "length": 1.4,
+  "loop": "hold"
+ },
+ "swoop": {
+  "rake": 0.75,
+  "length": 1.6,
+  "loop": false
+ },
+ "cog_spit": {
+  "spits": [
+   0.1,
+   0.4,
+   0.7
+  ],
+  "length": 1.2,
+  "loop": false
+ },
+ "thunder": {
+  "roar": 0.5,
+  "storm": 0.8,
+  "length": 3.2,
+  "loop": false
+ },
+ "roar_air": {
+  "roar": 0.6,
+  "length": 2.2,
+  "loop": false
+ },
+ "breath_charge": {
+  "length": 1.0,
+  "loop": "hold"
+ },
+ "breath": {
+  "length": 1.9,
+  "loop": true
+ },
+ "slam": {
+  "impact": 0.0,
+  "length": 1.2,
+  "loop": false
+ },
+ "air_bite": {
+  "hit": 0.38,
+  "length": 0.8,
+  "loop": false
+ },
+ "pounce": {
+  "leap": 0.38,
+  "land": 0.95,
+  "length": 1.6,
+  "loop": false
+ },
+ "dash_claw_left": {
+  "dash": 0.12,
+  "hit": 0.62,
+  "length": 1.25,
+  "loop": false
+ },
+ "dash_claw_right": {
+  "dash": 0.12,
+  "hit": 0.62,
+  "length": 1.25,
+  "loop": false
+ },
+ "dodge_left": {
+  "hop": 0.18,
+  "land": 0.52,
+  "length": 0.85,
+  "loop": false
+ },
+ "dodge_right": {
+  "hop": 0.18,
+  "land": 0.52,
+  "length": 0.85,
+  "loop": false
+ },
+ "ram": {
+  "length": 0.6,
+  "loop": true
+ },
+ "storm": {
+  "roar": 0.9,
+  "length": 3.8,
+  "loop": true
+ },
+ "dive_bounce": {
+  "leap": 0.35,
+  "length": 1.0,
+  "loop": false
+ },
+ "backstep": {
+  "leap": 0.3,
+  "land": 0.86,
+  "length": 1.25,
+  "loop": false
+ },
+ "wing_push": {
+  "push": 0.6,
+  "push2": 1.05,
+  "length": 1.6,
+  "loop": false
+ },
+ "spit": {
+  "charge": 0.1,
+  "spit": 0.6,
+  "length": 1.3,
+  "loop": false
+ },
+ "crash_land": {
+  "impact": 0.0,
+  "roar": 0.55,
+  "length": 1.6,
+  "loop": false
+ },
+ "emp_stunned": {
+  "jolt": 0.1,
+  "collapse": 0.42,
+  "up": 2.45,
+  "length": 3.0,
+  "loop": false
+ },
+ "pin_gnaw": {
+  "pin": 0.42,
+  "bites": [
+   0.85,
+   1.3,
+   1.75,
+   2.2
+  ],
+  "kick": 2.8,
+  "length": 3.2,
+  "loop": false
+ },
+ "carry": {
+  "length": 1.0,
+  "loop": true
+ },
+ "core_charge": {
+  "charge": 0.1,
+  "length": 1.5,
+  "loop": false
+ },
+ "core_beam": {
+  "length": 0.8,
+  "loop": true
+ },
+ "overload": {
+  "length": 2.4,
+  "loop": false
+ },
+ "spin_discharge": {
+  "spin": 0.4,
+  "discharge": 0.8,
+  "length": 1.7,
+  "loop": false
+ },
+ "hop_forward": {
+  "hop": 0.18,
+  "land": 0.52,
+  "length": 0.85,
+  "loop": false
+ },
+ "hop_back": {
+  "hop": 0.18,
+  "land": 0.52,
+  "length": 0.85,
+  "loop": false
+ },
+ "breath_down": {
+  "length": 1.6,
+  "loop": true
+ },
+ "strafe": {
+  "length": 1.0,
+  "loop": true
+ }
+}

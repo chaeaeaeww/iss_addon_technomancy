@@ -1,0 +1,61 @@
+{
+  "name": "Cơ Khí Phép",
+  "icon": "iss_technomancy:arcane_cog",
+  "category": "irons_spellbooks:root",
+  "sortnum": 21,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "iss_technomancy:arcane_cog",
+      "title": "Cơ Khí Phép",
+      "text": "Hệ Cơ Khí Phép dùng $(item)Bánh Răng Bí Thuật$() làm Focus, xoay quanh việc $(l)triển khai công trình$() và bảo trì chúng. Chế Bánh Răng từ đồng, vàng và đá đỏ; Đồng Hồ cũng dùng được làm Focus."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Cộng Hưởng Công Trình",
+      "text": "$(item)Tháp Pháo Đồng Thau$() đứng yên và tự bắn kẻ địch gần đó. Dùng $(item)Mỏ Hàn Hồ Quang$() bắn vào tháp của chính bạn để sửa chữa, kéo dài thời gian và $(l)Overclock$(), giúp tháp bắn nhanh hơn trong vài giây."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "iss_technomancy:technomancy_rune",
+      "title": "Rune Cơ Khí",
+      "text": "Bao quanh một Blank Rune bằng tám vật phẩm Focus của hệ. Rune dùng để nâng giáp pháp sư thành bộ $(item)Kỹ Sư Đồng Hồ$() và chế $(item)Orb Nâng Cấp Cơ Khí$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "iss_technomancy:clockwork_scepter",
+      "title": "Trượng Động Cơ Đồng Hồ",
+      "text": "Trượng vòng bánh răng xoay, tăng sức mạnh Cơ Khí Phép và giảm hồi chiêu. Có 3 ô mô-đun."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Giao Thức Quá Tải",
+      "text": "Overdrive cường hoá phép Cơ Khí $(l)kế tiếp$(): Loạt Bánh Răng bắn 5 bánh răng xuyên giáp, Mỏ Hàn phóng tia nảy sang 2 kẻ địch, Phun Hơi thành hơi siêu nóng, Triển Khai Tháp Pháo dựng $(item)Tháp Công Thành$() nòng đôi và Lắp Ráp Automaton tạo bản $(item)Mk.II$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "iss_technomancy:clockwork_automaton_spawn_egg",
+      "title": "Automaton Đồng Hồ",
+      "text": "Automaton hoang đấm rất mạnh và phun loạt bánh răng. Hạ chúng để lấy Bánh Răng Bí Thuật và đồng, hoặc tự lắp ráp bằng phép Lắp Ráp Automaton. Khi Quá Tải nó thành $(item)Mk.II$() — golem hơi nước tròn với Rocket Grab, Power Fist và Trường Tĩnh Điện."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "iss_technomancy:module_splitter_1",
+      "title": "Mô-đun Trượng",
+      "text": "$(l)Shift + chuột phải$() với Trượng Động Cơ để mở 3 ô. Mô-đun chỉ nâng cấp phép Cơ Khí niệm bằng trượng: $(item)Đa Nòng$() (thêm đạn), $(item)Cỡ Nòng$() (to và mạnh hơn), $(item)Lắp Ráp$() (thêm công trình), $(item)Tụ Điện$() (hồi chiêu, niệm nhanh) và $(item)Cuộn Tesla$() (sét nảy). Cùng loại cộng dồn tối đa cấp 5."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "iss_technomancy:clockwork_altar",
+      "title": "Rồng Công Nghệ",
+      "text": "Đền Đồng Hồ có sẵn tế đàn; cũng có thể tự chế. Dùng $(item)Lõi Dynamo Quá Tải$() lên tế đàn để đánh thức $(l)Rồng Công Nghệ$(): bánh răng, hơi thở sét, bão sấm, bổ nhào, gọi drone và phase 2 quá tải nguy hiểm hơn."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "iss_technomancy:clockwork_codex",
+      "title": "Mật Điển Đồng Hồ",
+      "text": "Sách phép 12 ô đóng bằng Lõi Rồng Công Nghệ: +15% sức mạnh Cơ Khí, +5% sức mạnh phép và +200 mana."
+    }
+  ]
+}

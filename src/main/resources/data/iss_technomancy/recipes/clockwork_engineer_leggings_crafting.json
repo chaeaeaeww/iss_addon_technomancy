@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "tag": "irons_spellbooks:wizard_base_leggings"
+    },
+    {
+      "item": "iss_technomancy:technomancy_rune"
+    },
+    {
+      "item": "irons_spellbooks:arcane_essence"
+    }
+  ],
+  "result": {
+    "item": "iss_technomancy:clockwork_engineer_leggings",
+    "count": 1
+  }
+}

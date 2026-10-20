@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BNB",
+    "RER",
+    "BAB"
+  ],
+  "key": {
+    "B": {
+      "item": "irons_spellbooks:lightning_bottle"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "R": {
+      "item": "iss_technomancy:technomancy_rune"
+    },
+    "E": {
+      "item": "irons_spellbooks:energized_core"
+    },
+    "A": {
+      "item": "irons_spellbooks:arcane_ingot"
+    }
+  },
+  "result": {
+    "item": "iss_technomancy:overcharged_dynamo_core",
+    "count": 1
+  }
+}
